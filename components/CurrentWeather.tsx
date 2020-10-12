@@ -6,8 +6,6 @@ import { WeatherIcon } from './WeatherIcon';
 
 export interface Props {
     city: string;
-    lat?: number;
-    lng?: number;
 }
 
 export const CurrentWeather: React.FC<Props> = (props) => {
