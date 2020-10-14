@@ -1,28 +1,22 @@
 import React from 'react';
 
 import {
-  SafeAreaView,
-  ScrollView, 
+  SafeAreaView,  
   StatusBar,
 } from 'react-native';
 
 import { CurrentWeather } from './components/CurrentWeather';
-
-
-
-
 
 const App = () => {
 
   return (
     <>
       <StatusBar barStyle="dark-content" />
-      <SafeAreaView>
-        <ScrollView
-          contentInsetAdjustmentBehavior="automatic"
-          >
-            <CurrentWeather city={'Budapest'}></CurrentWeather>
-        </ScrollView>
+      <SafeAreaView>         
+        <CurrentWeather 
+          city={'Budapest'} 
+          untis={'metric'}
+        />                    
       </SafeAreaView>
     </>
   );
