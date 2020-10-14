@@ -8,7 +8,6 @@ import { Weather } from './Weather';
 export interface Props {
     city: string;
     untis?: string;
-    
 }
 
 
